@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import bulmaAccordion from '../../../../node_modules/bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js';
+import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min';
 
 @Component({
   selector: 'app-faq',
