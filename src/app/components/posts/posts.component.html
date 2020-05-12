@@ -1,0 +1,16 @@
+<section class="container">
+    <table class="table is-fullwidth is-striped">
+        <thead>
+        </thead>
+        <tfoot>
+        </tfoot>
+        <tbody *ngFor="let card of TitleCard">
+            <tr>
+                <th>{{ card.id }}</th>
+                <th class="text"><a routerLink="{{ card.routerLink }}" routerLinkActive="active">{{ card.title }}</a></th>
+                <th>{{ card.author }}</th>
+                <th>{{ card.era }}</th>
+            </tr>
+        </tbody>
+    </table>
+</section>

@@ -1,0 +1,40 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+      <a routerLink="/home" routerLinkActive="active" class="navbar-item">
+          <img src="../../../assets/images/whitepomegranate.jpg" width="30" height="30">
+      </a>
+      <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+  </div>
+      
+  <div class="navbar-menu" #navMenu (click)="toggleNavbar()">
+    <div class="navbar-start">
+      <a routerLink="/home" routerLinkActive="active" class="navbar-item">
+          Home
+      </a>
+
+      <a routerLink="/about" routerLinkActive="active" class="navbar-item">
+          About
+      </a>
+
+      <a routerLink="/posts" routerLinkActive="active" class="navbar-item">
+          Posts
+      </a>
+
+      <a routerLink="/submission-form" routerLinkActive="active" class="navbar-item">
+          Submissions
+      </a>
+
+      <a routerLink="/faq" routerLinkActive="active" class="navbar-item">
+          FAQ
+      </a>
+    
+      <a routerLink="/contact-form" routerLinkActive="active" class="navbar-item">
+          Contact
+      </a>
+    </div>
+  </div>
+</nav>

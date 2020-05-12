@@ -1,0 +1,136 @@
+<section class="section">
+	<div class="columns is-centered">
+		<div class="column is-four-fifths">
+			<h1 class="title">Submission Form</h1>
+			<!--Guidelines listed here-->
+			<h2 class="subtitle" style="text-align:center">Guidelines</h2>
+			<ol type="I">
+				<li>Please use content or trigger warnings at the beginning of your submissions as necessary.</li>
+				<li>You may choose to remain anonymous by checking the box. When you do this, the name field will disappear.</li>
+				<li>You may choose to be contacted regarding your submission. This is not necessary, however. If you check the 
+					box to be contacted, you will need to provide your email. This could be useful in case of typos found in your 
+					submission or letting you know when your submission is posted.</li>
+				<li>Do not include actual names unless you have the explicit permission of the person whose name you are using. 
+					Our platform is not meant to be a call-out, but rather a call-for-action.</li>
+				<li>Our goal is to foster an understanding and build empathy for those who do not necessarily have a platform. 
+					Please keep this goal in mind for any work that you submit.</li>
+				<li>If the person is a public figure that has garnered previous media attention, 
+					then using their name without permission is acceptable.</li>
+				<li>The maximum character limit is 10000 characters. This is roughly between 1000 and 2000 words.</li>
+				<li>Poetry, recipes, and any kind of prose is accepted.</li>
+				<li>If you have any links to other websites you want to include, you can just copy and paste them 
+					into the text field along with your submission.
+				</li>
+				<li>
+					Currently, the software framework does not support image uploads. If you would like to include images for your post,
+					email them to <a href="mailto:societypomegranate@gmail.com">societypomegranate@gmail.com</a>. 
+					This is a feature that is still being worked on. You can definitely still remain anonymous if you choose to email 
+					the organization the images. Sorry for this inconvenience, and thank you for your cooperation!
+				</li>
+				<li>Your submission will only be accepted if you check the 'Agree' box below. 
+					Checking this box confirms that you have read all the aforementioned rules.</li>
+				<li>Any deviations from these rules may result in the delay of your submission being published.</li>
+			</ol>
+			<br>
+			<p class="success" *ngIf="formSubmitted">Submitted successfully</p>
+			<form [formGroup]="submissionForm" (ngSubmit)="onSubmit()">
+
+				<div class="field">
+					<!--Checkbox for remaining anonymous-->
+					<label class="checkbox">
+            <input type="checkbox" formControlName="anonymous">
+            Remain anonymous
+          </label>
+				</div>
+
+				<div class="field" [hidden]="anonymous.value">
+					<!--Checkbox for remaining anonymous-->
+					<input  class="input"
+                  type="text"
+                  placeholder="Name"
+                  formControlName="name"
+                  [ngClass]="{'form-submitted': formSubmitted}">
+					<div class="help-is-danger" *ngIf="nameInvalid && !name.pristine">
+						Name should be 50 characters or less.
+					</div>
+				</div>
+
+				<div class="field">
+					<!--Checkbox for being contacted-->
+					<label class="checkbox">
+            <input type="checkbox" formControlName="contact">
+            Contact me
+          </label>
+				</div>
+
+				<div class="field" [hidden]="!contact.value">
+					<!--Field for email-->
+					<input  class="input"
+                  type="text"
+                  placeholder="Email"
+                  formControlName="email"
+                  [ngClass]="{'form-submitted': formSubmitted}">
+					<div class="help-is-danger" *ngIf="emailInvalid && !email.pristine">
+						<p>Valid email is required.</p>
+					</div>
+				</div>
+
+				<div class="field">
+					<!--Field for content warnings-->
+					<input  class="input"
+                  type="text"
+                  placeholder="Content warnings"
+                  formControlName="contentWarning"
+                  [ngClass]="{'form-submitted': formSubmitted}">
+					<div class="help-is-danger" *ngIf="contentWarning.invalid && !contentWarning.pristine">
+						Content warnings are required.
+					</div>
+				</div>
+
+				<div class="field">
+					<!--Field for title-->
+					<input  class="input"
+                  type="text"
+                  placeholder="Title"
+                  formControlName="title"
+                  [ngClass]="{'form-submitted': formSubmitted}">
+					<div class="help-is-danger" *ngIf="title.invalid && !title.pristine">
+						Title is required.
+					</div>
+				</div>
+
+				<div class="field">
+					<!--Text area for message-->
+					<textarea   class="textarea"
+                      type="text"
+                      placeholder="Your Submission"
+                      formControlName="message">
+          </textarea>
+					<div class="help-is-danger" *ngIf="message.invalid && !message.pristine">
+						<p *ngIf="message.errors">
+							Message is required and should be at least 10 characters.
+						</p>
+					</div>
+				</div>
+
+				<div class="field">
+					<!--Checkbox for agree-->
+					<label class="checkbox">
+            <input type="checkbox" formControlName="agree">
+            Agree
+          </label>
+					<div class="help-is-danger" *ngIf="submissionForm.hasError('required', 'agree') && !agree.pristine">
+						Must check 'Agree' in order to submit.
+					</div>
+				</div>
+
+				<!--Submit Button-->
+				<button type="submit"
+                class="button is-danger is-outlined"
+                [disabled]="!submissionForm.valid">
+          Submit
+        </button>
+			</form>
+		</div>
+	</div>
+</section>

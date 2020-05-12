@@ -1,0 +1,52 @@
+<section class="section">
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <h1 class="title">Contact Form</h1>
+            <p>Do you have a question, comment, or suggestion?</p><br>
+            <p class="success" *ngIf="formSubmitted">Submitted successfully</p>
+            <form [formGroup]="contactForm" 
+                (ngSubmit)="onSubmit()"
+                action="https://formspree.io/moqkvdyk"
+                method="POST" 
+                novalidate>
+                <div class="field">
+                    <!--Field for name-->
+                    <input class="input" 
+                        type="text"
+                        placeholder="Name"
+                        formControlName="name"
+                        [ngClass]="{'form-submitted': formSubmitted}">
+                    <p class="help-is-danger" *ngIf="name.invalid && !name.pristine">Name is required.</p>
+                </div>
+                
+                <div class="field">
+                    <!--Field for email-->
+                    <input class="input"
+                        type="text"
+                        placeholder="Email"
+                        formControlName="email"
+                        [ngClass]="{'form-submitted': formSubmitted}">
+                    <div class="help-is-danger" *ngIf="email.invalid && !email.pristine">
+                        <p *ngIf="email.errors.email">Valid email is required.</p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <!--Text area for message-->
+                    <textarea class="textarea"
+                        type="text"
+                        placeholder="Your Message"
+                        formControlName="message"
+                        [ngClass]="{'form-submitted': formSubmitted}">
+                    </textarea>
+                    <div class="help-is-danger" *ngIf="message.invalid && !message.pristine">
+                        <p *ngIf="message.errors.minlength">Message is required and should be at least 10 characters.</p>
+                    </div>
+                </div>
+
+                <!--Submit Button-->
+                <button type="submit" class="button is-danger is-outlined" [disabled]="!contactForm.valid">Submit</button> 
+            </form>
+        </div>
+    </div>
+</section>

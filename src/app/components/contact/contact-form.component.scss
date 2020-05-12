@@ -1,0 +1,17 @@
+$blue: #800020;
+$pink: #67AE5C;
+$pink-invert: floralwhite;
+$font-family: 'Amiri';
+$primary: #800020;
+$primary-invert: #FFD700;
+$family-primary: 'Amiri';
+$danger: #800020;
+$success: #67AE5C;
+
+h1, h2, h3, h4, h5, h6, label, p {
+    font-family: 'Amiri';
+    font-weight: normal;
+}
+
+@import "bulma";
+@import url('https://fonts.googleapis.com/css?family=Amiri');
