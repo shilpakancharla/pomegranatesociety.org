@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
+
 //Articles
 import { PortrayalvsrealityComponent } from './components/articles/portrayalvsreality/portrayalvsreality.component';
 import { InterculturalinterracialdatingComponent } from './components/articles/interculturalinterracialdating/interculturalinterracialdating.component';
@@ -32,6 +33,7 @@ import { HighfunctioninganxietyComponent } from './components/articles/highfunct
 import { PermissiontomournComponent } from './components/articles/permissiontomourn/permissiontomourn.component';
 import { PostgraddepressionComponent } from './components/articles/postgraddepression/postgraddepression.component';
 import { SexualassaultinrelationtofeminisminterviewComponent } from './components/articles/sexualassaultinrelationtofeminisminterview/sexualassaultinrelationtofeminisminterview.component';
+import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -65,6 +67,7 @@ const routes: Routes = [
   { path: 'articles/highfunctioninganxiety', component: HighfunctioninganxietyComponent },
   { path: 'articles/sexualassaultinrelationtofeminisminterview', component: SexualassaultinrelationtofeminisminterviewComponent },
   { path: 'articles/postgraddepression', component: PostgraddepressionComponent },
+  { path: 'articles/doyoucare', component: DoyoucareComponent },
   //Redirection items
   { path: '', redirectTo: '/home', pathMatch: 'full' }, //Redirect to home page
   { path: '**', component: NoPageFoundComponent } //Redirect to 404
