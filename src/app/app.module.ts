@@ -49,6 +49,7 @@ import { HighfunctioninganxietyComponent } from './components/articles/highfunct
 import { PermissiontomournComponent } from './components/articles/permissiontomourn/permissiontomourn.component';
 import { PostgraddepressionComponent } from './components/articles/postgraddepression/postgraddepression.component';
 import { SexualassaultinrelationtofeminisminterviewComponent } from './components/articles/sexualassaultinrelationtofeminisminterview/sexualassaultinrelationtofeminisminterview.component';
+import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { SexualassaultinrelationtofeminisminterviewComponent } from './component
     HighfunctioninganxietyComponent,
     PermissiontomournComponent,
     PostgraddepressionComponent,
-    SexualassaultinrelationtofeminisminterviewComponent
+    SexualassaultinrelationtofeminisminterviewComponent,
+    DoyoucareComponent
   ],
   imports: [
     BrowserModule,
