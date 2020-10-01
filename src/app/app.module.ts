@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
 
 //Articles
 import { PortrayalvsrealityComponent } from './components/articles/portrayalvsreality/portrayalvsreality.component';
@@ -100,6 +101,7 @@ import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.co
     MatInputModule,
     MatCardModule,
     MatExpansionModule,
+    MatSliderModule,
     HttpClientModule
   ],
   providers: [

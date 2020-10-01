@@ -24,52 +24,145 @@
             <br>
             <p class="success" *ngIf="formSubmitted">Submitted successfully</p>
             <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
-                <div class="controls">
+                <div class="field">
                     <!--Radio options for race-->
-                    <p>Please select your race.*</p>
+                    <p>1. Please select your race.*</p>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">Asian or Pacific Islander
+                            <input type="radio" formControlName="race"> Asian or Pacific Islander
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">Black or African American
+                            <input type="radio" formControlName="race"> Black or African American
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">Hispanic or Latino
+                            <input type="radio" formControlName="race"> Hispanic or Latino
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">Native American or American Indian
+                            <input type="radio" formControlName="race"> Native American or American Indian
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">White
+                            <input type="radio" formControlName="race"> White
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">More than one of the above
+                            <input type="radio" formControlName="race"> More than one of the above
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">I choose not to identify
+                            <input type="radio" formControlName="race"> I choose not to identify
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" formControlName="race">Other
+                            <input type="radio" formControlName="race"> Other
                         </label>
                     </div>
                 </div>
                 <div class="field">
-                    <label input="text">Please enter your age.</label>
+                    <!--Field for age-->
+                    <label input="text"><br>2. Please enter your age as a number.<br></label>
+                    <input type="number" formControlName="age">
+                </div>
+                <div class="field">
+                    <!--Radio options for Question 1-->
+                    <p><br>3. Do you think the current way we discuss sexual assault should be changed?*</p>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question1"> Yes
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question1"> No
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <!--Field for Question 2-->
+                    <label input="text"><br>4. What is one thing you would change about the current discourse on sexual assault? *<br></label>
+                    <textarea class="textarea" type="text" formControlName="question2"></textarea>                
+                </div>
+                <div class="field">
+                    <!--Field for Question 3-->
+                    <label input="text"><br>5. What are three words that you associate with the #MeToo movement? *<br></label>
+                    <input type="text" formControlName="question3">
+                </div>
+                <div class="field">
+                    <!--Field for Question 4-->
+                    <label input="text"><br>6. What are three emotions that you associate with the #MeToo movement? *<br></label>
+                    <input type="text" formControlName="question4">
+                </div>
+                <div class="field">
+                    <!--Radio options for Question 5-->
+                    <p><br>7. Have you seen any backlash to the #MeToo movement? (This can include instances over social media and in person).</p>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question5"> Yes
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question5"> No
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <!--Field for Question 6-->
+                    <p><br>8. If you have witnessed backlash, could you please describe the circumstance in which it occurred?<br></p>
+                    <textarea class="textarea" type="text" formControlName="question6"></textarea>
+                </div>
+                <div class="field">
+                    <!--Field for Question 7-->
+                    <p><br>9. Has the backlash you've witnessed been from people within your racial or socioeconomic community? Please explain.<br></p>
+                    <textarea class="textarea" type="text" formControlName="question7"></textarea>
+                </div>
+                <div class="field">
+                    <!--Radio options for Question 8-->
+                    <p><br>10. If you're a survivor/victim, have you felt more open about coming out with your story after #MeToo began?<br></p>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question8"> Yes
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question8"> No
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <!--Radio options for Question 9-->
+                    <p><br>11. Have you noticed more survivors/victims coming out with their stories since #MeToo began?*<br> </p>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question9"> Yes
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="question9"> No
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <!--Slider for Question 10-->
+                    <p><br>12. If you are a survivor, how would you rate your sense of shame before #MeToo? (5 being the highest sense of shame)<br></p>
+                    <mat-slider
+                        thumbLabel
+                        [displayWith]="formatLabel"
+                        tickInterval="1000"
+                        min="1"
+                        max="5" class="cdk-focused"></mat-slider>
                 </div>
             </form>
         </div>

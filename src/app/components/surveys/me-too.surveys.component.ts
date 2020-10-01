@@ -97,6 +97,13 @@ export class MeTooSurveysComponent implements OnInit {
     );
   }
 
+  formatLabel(value: number | null) {
+    if (!value) {
+      return 0;
+    }
+    return value;
+  }
+
   onSumbit() {
     this.formSubmitted = true; //Form has been submitted
   }
