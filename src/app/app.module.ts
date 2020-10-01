@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { MeTooSurveysComponent } from './components/surveys/me-too.surveys.component';
 import { ContactFormComponent } from './components/contact/contact-form.component';
 import { SubmissionFormComponent } from './components/submission/submission-form.component';
 import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
@@ -50,7 +51,6 @@ import { PermissiontomournComponent } from './components/articles/permissiontomo
 import { PostgraddepressionComponent } from './components/articles/postgraddepression/postgraddepression.component';
 import { SexualassaultinrelationtofeminisminterviewComponent } from './components/articles/sexualassaultinrelationtofeminisminterview/sexualassaultinrelationtofeminisminterview.component';
 import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.component';
-import { SurveysComponent } from './components/surveys/me-too.surveys.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +90,7 @@ import { SurveysComponent } from './components/surveys/me-too.surveys.component'
     PostgraddepressionComponent,
     SexualassaultinrelationtofeminisminterviewComponent,
     DoyoucareComponent,
-    SurveysComponent
+    MeTooSurveysComponent
   ],
   imports: [
     BrowserModule,

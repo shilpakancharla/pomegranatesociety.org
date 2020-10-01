@@ -1,0 +1,77 @@
+<section class="section">
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <h1 class="title">More Than Just A Statistic - #MeToo Analysis</h1> 
+            <!--Instructions listed here-->
+            <h2 class="subtitle">Trigger/Content Warning: Sexual assault, #MeToo movement</h2>
+            <p>
+                <b>Note:</b> Your responses to this survey are completely anonymous. We are not collecting names, email addresses, or any other type of personal information. 
+                Not all questions may apply to you, so do not feel like you have to respond with a concrete answer. It's okay to say "I don't know" or not answer 
+                if you do not have answer.<br>
+
+                <br>We’ve all heard the statistic “One in five women will be sexually assaulted in college.” Do we understand what goes into this statistic, however? This 
+                isn’t a game of roulette at all. These are real people. These are people with complex and variegated emotions and mental states. These people may be your 
+                best friend, your neighbor or your roommate. These people won’t always be women. These people won't always be men, either. These people won’t always be 
+                adults. These are real events that impact them, perhaps for the rest of their life.<br>
+
+                <br>This study aims to analyze the language used when talking about the #MeToo movement, and delve deeper into understanding the sentiments and emotions 
+                of such a movement, and to finally demonstrate that sexual assault is more than just a statistic - it is a lived experienced and the attitudes that 
+                surround it heavily influence our day-to-day interactions.<br>
+
+                <br>By participating in this survey, you are helping launch this very important project in changing the discourse surrounding sexual asault. 
+                Thank you for filling out this survey. Your contribution is valued.<br>
+            </p>
+            <br>
+            <p class="success" *ngIf="formSubmitted">Submitted successfully</p>
+            <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+                <div class="controls">
+                    <!--Radio options for race-->
+                    <p>Please select your race.*</p>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">Asian or Pacific Islander
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">Black or African American
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">Hispanic or Latino
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">Native American or American Indian
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">White
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">More than one of the above
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">I choose not to identify
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" formControlName="race">Other
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label input="text">Please enter your age.</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

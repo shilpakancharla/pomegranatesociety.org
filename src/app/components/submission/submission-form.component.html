@@ -46,10 +46,10 @@
 				<div class="field" [hidden]="anonymous.value">
 					<!--Checkbox for remaining anonymous-->
 					<input  class="input"
-                  type="text"
-                  placeholder="Name"
-                  formControlName="name"
-                  [ngClass]="{'form-submitted': formSubmitted}">
+							type="text"
+							placeholder="Name"
+							formControlName="name"
+							[ngClass]="{'form-submitted': formSubmitted}">
 					<div class="help-is-danger" *ngIf="nameInvalid && !name.pristine">
 						Name should be 50 characters or less.
 					</div>
