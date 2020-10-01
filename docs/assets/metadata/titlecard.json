@@ -1,5 +1,13 @@
 [
     {
+        "id": 25,
+        "title": "Do You Care? Agency and Brown Women",
+        "author": "Vaishnavi Siripurapu",
+        "era": "September 2020",
+        "anonymous": false,
+        "routerLink": "/articles/doyoucare"
+    },
+    {
         "id": 24,
         "title": "Postgrad Depression",
         "author": "Huma Khursheed",
