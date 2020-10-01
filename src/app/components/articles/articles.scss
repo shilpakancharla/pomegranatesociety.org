@@ -34,5 +34,9 @@ h1, h2, h3, h4, h5, h6, label, p, ul, li{
     border-radius: 50%;
 }
 
+.is-horizontal-center {
+    justify-content: center;
+  }
+
 @import "bulma";
 @import url('https://fonts.googleapis.com/css?family=Amiri');
