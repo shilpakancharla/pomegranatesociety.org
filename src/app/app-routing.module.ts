@@ -5,9 +5,9 @@ import { ContactFormComponent } from './components/contact/contact-form.componen
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { MeTooSurveysComponent } from './components/surveys/me-too.surveys.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
-
 //Articles
 import { PortrayalvsrealityComponent } from './components/articles/portrayalvsreality/portrayalvsreality.component';
 import { InterculturalinterracialdatingComponent } from './components/articles/interculturalinterracialdating/interculturalinterracialdating.component';
@@ -38,7 +38,8 @@ import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.co
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'posts', component: PostsComponent},
+  { path: 'posts', component: PostsComponent },
+  { path: 'surveys', component: MeTooSurveysComponent },
   { path: 'submission-form', component: SubmissionFormComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'contact-form', component: ContactFormComponent },

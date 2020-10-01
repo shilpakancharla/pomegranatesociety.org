@@ -50,6 +50,7 @@ import { PermissiontomournComponent } from './components/articles/permissiontomo
 import { PostgraddepressionComponent } from './components/articles/postgraddepression/postgraddepression.component';
 import { SexualassaultinrelationtofeminisminterviewComponent } from './components/articles/sexualassaultinrelationtofeminisminterview/sexualassaultinrelationtofeminisminterview.component';
 import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.component';
+import { SurveysComponent } from './components/surveys/me-too.surveys.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { DoyoucareComponent } from './components/articles/doyoucare/doyoucare.co
     PermissiontomournComponent,
     PostgraddepressionComponent,
     SexualassaultinrelationtofeminisminterviewComponent,
-    DoyoucareComponent
+    DoyoucareComponent,
+    SurveysComponent
   ],
   imports: [
     BrowserModule,
