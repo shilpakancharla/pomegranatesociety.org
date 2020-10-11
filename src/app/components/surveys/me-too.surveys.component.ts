@@ -104,7 +104,7 @@ export class MeTooSurveysComponent implements OnInit {
     return value;
   }
 
-  onSumbit() {
+  onSubmit() {
     this.formSubmitted = true; //Form has been submitted
   }
 

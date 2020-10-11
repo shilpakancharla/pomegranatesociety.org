@@ -13,5 +13,17 @@ h1, h2, h3, h4, h5, h6, label, p, ul, li {
     font-weight: normal;
 }
 
+:host ::ng-deep .main .mat-slider-thumb {
+    background-color: #800020;
+}
+  
+:host ::ng-deep .main .mat-slider-thumb-label {
+    background-color: #800020;
+}
+  
+:host ::ng-deep .main .mat-slider-track-fill {
+    background-color: #800020;
+}
+  
 @import "bulma";
 @import url('https://fonts.googleapis.com/css?family=Amiri');

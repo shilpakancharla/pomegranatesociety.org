@@ -28,6 +28,17 @@ $psapp-theme: mat-light-theme($psapp-primary, $psapp-accent, $psapp-warn);
 @include angular-material-theme($psapp-theme);
 
 /* You can add global styles to this file, and also import other style files */
+:host ::ng-deep .main .mat-slider-thumb {
+    background-color: blue;
+}
+  
+:host ::ng-deep .main .mat-slider-thumb-label {
+    background-color: blue;
+}
+  
+:host ::ng-deep .main .mat-slider-track-fill {
+    background-color: blue;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

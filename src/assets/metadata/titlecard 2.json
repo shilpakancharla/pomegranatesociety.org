@@ -1,0 +1,202 @@
+[
+    {
+        "id": 25,
+        "title": "Do You Care? Agency and Brown Women",
+        "author": "Vaishnavi Siripurapu",
+        "era": "September 2020",
+        "anonymous": false,
+        "routerLink": "/articles/doyoucare"
+    },
+    {
+        "id": 24,
+        "title": "Postgrad Depression",
+        "author": "Huma Khursheed",
+        "era": "March 2019",
+        "anonymous": false,
+        "routerLink": "/articles/postgraddepression"
+    },
+    {
+        "id": 23,
+        "title": "Sexual assault in relation to feminism - an interview",
+        "author": "Nina Dakoriya",
+        "era": "February 2019",
+        "anonymous": false,
+        "routerLink": "/articles/sexualassaultinrelationtofeminisminterview"
+    },
+    {
+        "id": 22,
+        "title": "High-functioning anxiety",
+        "author": "Shilpa Kancharla",
+        "era": "January 2019",
+        "anonymous": false,
+        "routerLink": "/articles/highfunctioninganxiety"
+    },
+    {
+        "id": 21,
+        "title": "Dreamy bedtime latte",
+        "author": "Farihah Begum Shukie",
+        "era": "December 2018",
+        "anonymous": false,
+        "routerLink": "/articles/dreamybedtimelatte"
+    },
+    {
+        "id": 20,
+        "title": "Yoga for the cold season",
+        "author": "Farihah Begum Shukie",
+        "era": "November 2018",
+        "anonymous": false,
+        "routerLink": "/articles/yogaforthecoldseason"
+    },
+    {
+        "id": 19,
+        "title": "Permission to Mourn",
+        "author": "Negar Esfandiari",
+        "era": "September 2018",
+        "anonymous": false,
+        "routerLink": "/articles/permissiontomourn"
+    },
+    {
+        "id": 18,
+        "title": "Mental health in the South Asian Community",
+        "author": "Farihah Begum Shukie",
+        "era": "September 2018",
+        "anonymous": false,
+        "routerLink": "/articles/mentalhealthinthesouthasiancommunity"
+    },
+    {
+        "id": 17,
+        "title": "Women in Indian films - A Critique",
+        "author": "Vaishnavi Siripurapu",
+        "era": "September 2018",
+        "anonymous": false,
+        "routerLink": "/articles/womeninindianfilmsacritique"
+    },
+    {
+        "id": 16,
+        "title": "Native Roots (Poem)",
+        "author": "Shilpa Kancharla",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/nativerootspoem"
+    },
+    {
+        "id": 15,
+        "title": "Double Standard of Marriage in Patriarchal Societies",
+        "author": "Huma Khursheed",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/doublestandardsofmarriageinpatriarchalsocieties"
+    },
+    {
+        "id": 14,
+        "title": "Pressures of getting married",
+        "author": "Farihah Begum Shukie",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/pressuresofgettingmarried"
+    },
+    {
+        "id": 13,
+        "title": "Self-care in the United States",
+        "author": "Bexx Hale",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/selfcareintheus"
+    },
+    {
+        "id": 12,
+        "title": "The Moon, She Weeps (Poem)",
+        "author": "Allie Todd",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/themoonsheweepspoem"
+    },
+    {
+        "id": 11,
+        "title": "Self-care (Poem)",
+        "author": "Allie Todd",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/selfcarepoem"
+    },
+    {
+        "id": 10,
+        "title": "Interview with Vijay Sridharan: Director of Peacock",
+        "author": "Renee Marchol",
+        "era": "August 2018",
+        "anonymous": false,
+        "routerLink": "/articles/interviewwithvijaysridharan"
+    },
+    {
+        "id": 9,
+        "title": "50 shades of rape",
+        "author": "Anonymous",
+        "era": "July 2018",
+        "anonymous": true,
+        "routerLink": "/articles/fiftyshadesofrape"
+    },
+    {
+        "id": 8,
+        "title": "Truths",
+        "author": "Anonymous",
+        "era": "July 2018",
+        "anonymous": true,
+        "routerLink": "/articles/truths"
+    },
+    {
+        "id": 7,
+        "title": "My TED Talk: A #MeToo Story",
+        "author": "Anonymous",
+        "era": "July 2018",
+        "anonymous": true,
+        "routerLink": "/articles/mytedtalkametoostory"
+    },
+    {
+        "id": 6,
+        "title": "Bengali Beauty Standards",
+        "author": "Farihah Begum Shukie",
+        "era": "July 2018",
+        "anonymous": false,
+        "routerLink": "/articles/bengalibeautystandards"
+    },
+    {
+        "id": 5,
+        "title": "Bollywood bringing positive portrayals or more victim-blaming?",
+        "author": "Satveer Kler",
+        "era": "July 2018",
+        "anonymous": false,
+        "routerLink": "/articles/bollywoodperspectives"
+    },
+    {
+        "id": 4,
+        "title": "Choosing your narrative",
+        "author": "Anonymous",
+        "era": "July 2018",
+        "anonymous": true,
+        "routerLink": "/articles/choosingyournarrative"
+    },
+    {
+        "id": 3,
+        "title": "How Can I Help?",
+        "author": "Madelyn McKeague",
+        "era": "July 2018",
+        "anonymous": false,
+        "routerLink": "/articles/howcanihelp"
+    },
+    {
+        "id": 2,
+        "title": "Intercultural/Interracial Dating",
+        "author": "Nina Tan",
+        "era": "July 2018",
+        "anonymous": false,
+        "routerLink": "/articles/interculturalinterracialdating"
+    },
+    {
+        "id": 1,
+        "title": "Portrayal vs Reality",
+        "author": "Shilpa Kancharla",
+        "era": "July 2018",
+        "anonymous": false,
+        "routerLink": "/articles/portrayalvsreality"
+    }
+]

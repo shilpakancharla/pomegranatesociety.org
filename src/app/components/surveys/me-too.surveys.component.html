@@ -156,13 +156,32 @@
                 </div>
                 <div class="field">
                     <!--Slider for Question 10-->
-                    <p><br>12. If you are a survivor, how would you rate your sense of shame before #MeToo? (5 being the highest sense of shame)<br></p>
-                    <mat-slider
+                    <p><br>12. If you are a survivor, how would you rate your sense of shame before #MeToo? Use the slider to choose your answer. (5 being the highest sense of shame)<br></p>
+                    <br>
+                    <mat-slider class="main"
                         thumbLabel
                         [displayWith]="formatLabel"
-                        tickInterval="1000"
+                        tickInterval="1"
                         min="1"
-                        max="5" class="cdk-focused"></mat-slider>
+                        max="5">
+                    </mat-slider>
+                </div>
+                <div class="field">
+                    <!--Slider for Question 11-->
+                    <p><br>13. If you are a survivor, how would you rate your sense of shame after #MeToo stared? Use the slider to choose your answer. (5 being the highest sense of shame)<br></p>
+                    <br>
+                    <mat-slider class="main"
+                        thumbLabel
+                        [displayWith]="formatLabel"
+                        tickInterval="1"
+                        min="1"
+                        max="5">
+                    </mat-slider>
+                </div>
+                <div class="field">
+                    <!--Field for Question 12-->
+                    <p>14. Have you found or seen instances of restorative justice in your own experience or in others' experiences with #MeToo? (<b>Restorative Justice</b>: finding rehabilitation for offenders through reconciliation with victims and the community at large)</p>
+                    <textarea class="textarea" type="text" formControlName="question12"></textarea>
                 </div>
             </form>
         </div>
