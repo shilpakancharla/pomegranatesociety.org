@@ -8,9 +8,15 @@ $family-primary: 'Amiri';
 $danger: #800020;
 $success: #67AE5C;
 
-h1, h2, h3, h4, h5, h6, label, p {
+h1, h2, h3, h4, h5, h6, label {
     font-family: 'Amiri';
     font-weight: normal;
+}
+
+p {
+    font-family: 'Amiri';
+    font-weight: normal; 
+    font-size: medium;
 }
 
 @import "bulma";

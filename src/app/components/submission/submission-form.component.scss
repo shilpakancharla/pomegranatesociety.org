@@ -8,9 +8,21 @@ $family-primary: 'Amiri';
 $danger: #800020;
 $success: #67AE5C;
 
-h1, h2, h3, h4, h5, h6, label, p, ul, li {
+h1, h2, h3, h4, h5, h6, label, ul, li {
     font-family: 'Amiri';
     font-weight: normal;
+}
+
+ul, li {
+    font-family: 'Amiri';
+    font-weight: normal; 
+    font-size: medium;  
+}
+
+p {
+    font-family: 'Amiri';
+    font-weight: normal; 
+    font-size: medium;
 }
 
 :host ::ng-deep .main .mat-slider-thumb {
