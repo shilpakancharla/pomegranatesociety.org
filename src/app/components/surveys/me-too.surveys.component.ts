@@ -22,59 +22,15 @@ export class MeTooSurveysComponent implements OnInit {
   createForm(): void {
     this.surveyForm = this.fb.group(
       {
-        race: [null, 
-          [
-            Validators.required
-          ]
-        ], //Radio
-        age: ["",
-          [
-            Validators.required,
-            Validators.minLength(1),
-            Validators.maxLength(3),
-            Validators.pattern("^[0-9]*$")
-          ]
-        ], //Text field
-        question1: [null,
-          [
-            Validators.required
-          ]
-        ], //Radio 
-        question2: ["",
-          [
-            Validators.required,
-            Validators.minLength(10),
-            Validators.maxLength(10000)
-          ]
-        ], //Text field
-        question3: ["",
-          [
-            Validators.required,
-            Validators.minLength(10),
-            Validators.maxLength(10000)
-          ]
-        ], //Text field
-        question4: ["",
-          [
-            Validators.required,
-            Validators.minLength(10),
-            Validators.maxLength(10000)
-          ]
-        ], //Text field
-        question5: [null,
-          [
-            Validators.required
-          ]
-        ], //Radio
-        question6: ["",
-          [
-            Validators.minLength(10),
-            Validators.maxLength(10000)
-          ]
-        ], //Text field
-        question7: ["",
-          [
-            Validators.minLength(10),
+        race: [null, [Validators.required]], //Radio
+        age: ["", [Validators.required, Validators.minLength(1), Validators.maxLength(3), Validators.pattern("^[0-9]*$")]], //Text field
+        question1: [null, [Validators.required]], //Radio 
+        question2: ["", [Validators.required, Validators.minLength(10), Validators.maxLength(10000)]], //Text field
+        question3: ["", [ Validators.required, Validators.minLength(10), Validators.maxLength(10000)]], //Text field
+        question4: ["", [Validators.required, Validators.minLength(10), Validators.maxLength(10000)]], //Text field
+        question5: [null, [Validators.required]], //Radio
+        question6: ["", [Validators.minLength(10), Validators.maxLength(10000)]], //Text field
+        question7: ["", [Validators.minLength(10),
             Validators.maxLength(10000)
           ]
         ], //Text field
@@ -106,6 +62,11 @@ export class MeTooSurveysComponent implements OnInit {
 
   onSubmit() {
     this.formSubmitted = true; //Form has been submitted
+
+    //Process the form
+    if (this.surveyForm.valid) {
+
+    }
   }
 
   get race() { return this.surveyForm.get("race"); }

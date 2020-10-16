@@ -63,11 +63,11 @@
 
 				<div class="field" [hidden]="!contact.value">
 					<!--Field for email-->
-					<input  class="input"
-                  type="text"
-                  placeholder="Email"
-                  formControlName="email"
-                  [ngClass]="{'form-submitted': formSubmitted}">
+					<input class="input"
+							type="text"
+							placeholder="Email"
+							formControlName="email"
+							[ngClass]="{'form-submitted': formSubmitted}">
 					<div class="help-is-danger" *ngIf="emailInvalid && !email.pristine">
 						<p>Valid email is required.</p>
 					</div>
@@ -76,10 +76,10 @@
 				<div class="field">
 					<!--Field for content warnings-->
 					<input  class="input"
-                  type="text"
-                  placeholder="Content warnings"
-                  formControlName="contentWarning"
-                  [ngClass]="{'form-submitted': formSubmitted}">
+							type="text"
+							placeholder="Content warnings"
+							formControlName="contentWarning"
+							[ngClass]="{'form-submitted': formSubmitted}">
 					<div class="help-is-danger" *ngIf="contentWarning.invalid && !contentWarning.pristine">
 						Content warnings are required.
 					</div>
@@ -87,11 +87,11 @@
 
 				<div class="field">
 					<!--Field for title-->
-					<input  class="input"
-                  type="text"
-                  placeholder="Title"
-                  formControlName="title"
-                  [ngClass]="{'form-submitted': formSubmitted}">
+					<input 	class="input"
+							type="text"
+							placeholder="Title"
+							formControlName="title"
+							[ngClass]="{'form-submitted': formSubmitted}">
 					<div class="help-is-danger" *ngIf="title.invalid && !title.pristine">
 						Title is required.
 					</div>
@@ -100,10 +100,10 @@
 				<div class="field">
 					<!--Text area for message-->
 					<textarea   class="textarea"
-                      type="text"
-                      placeholder="Your Submission"
-                      formControlName="message">
-          </textarea>
+								type="text"
+								placeholder="Your Submission"
+								formControlName="message">
+					</textarea>
 					<div class="help-is-danger" *ngIf="message.invalid && !message.pristine">
 						<p *ngIf="message.errors">
 							Message is required and should be at least 10 characters.
@@ -114,9 +114,8 @@
 				<div class="field">
 					<!--Checkbox for agree-->
 					<label class="checkbox">
-            <input type="checkbox" formControlName="agree">
-            Agree
-          </label>
+						<input type="checkbox" formControlName="agree">Agree
+					</label>
 					<div class="help-is-danger" *ngIf="submissionForm.hasError('required', 'agree') && !agree.pristine">
 						Must check 'Agree' in order to submit.
 					</div>

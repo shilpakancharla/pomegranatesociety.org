@@ -25,6 +25,10 @@ p {
     font-size: medium;
 }
 
+.radio {
+    display: block;
+}
+
 :host ::ng-deep .main .mat-slider-thumb {
     background-color: #800020;
 }

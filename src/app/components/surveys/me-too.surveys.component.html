@@ -5,7 +5,7 @@
             <!--Instructions listed here-->
             <h2 class="subtitle">Trigger/Content Warning: Sexual assault, #MeToo movement</h2>
             <p>
-                <b>Note:</b> Your responses to this survey are completely anonymous. We are not collecting names, email addresses, or any other type of personal information. 
+                <b>Note:</b> Your responses to this survey are completely anonymous. Names, email addresses, or any other type of personal information are not being collected. 
                 Not all questions may apply to you, so do not feel like you have to respond with a concrete answer. It's okay to say "I don't know" or not answer 
                 if you do not have answer.<br>
 
@@ -27,45 +27,42 @@
                 <div class="field">
                     <!--Radio options for race-->
                     <p>1. Please select your race.*</p>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> Asian or Pacific Islander
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> Black or African American
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> Hispanic or Latino
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> Native American or American Indian
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> White
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> More than one of the above
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> I choose not to identify
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" formControlName="race"> Other
-                        </label>
+                    <div class="radio">
+                        <div>
+                            <input id="asian" type="radio" name="race" value="asian" formControlName="race" [(ngModel)]="value">
+                            <label for="asian"> Asian or Pacific Islander</label>
+                        </div>
+                        <div>
+                            <input id="black" type="radio" name="race" value="black" formControlName="race" [(ngModel)]="value">
+                            <label for="black"> Black or African American</label>
+                        </div>
+                        <div>
+                            <input id="hispanic" type="radio" name="race" value="hispanic" formControlName="race" [(ngModel)]="value">
+                            <label for="hispanic"> Hispanic or Latino</label>
+                        </div>
+                        <div>
+                            <input id="native" type="radio" name="race" value="native" formControlName="race" [(ngModel)]="value">
+                            <label for="native"> Native American or American Indian</label>
+                        </div>
+                        <div>
+                            <input id="white" type="radio" name="race" value="white" formControlName="race" [(ngModel)]="value">
+                            <label for="white"> White</label>
+                        </div>
+                        <div>
+                            <input id="more" type="radio" name="race" value="more" formControlName="race" [(ngModel)]="value"> 
+                            <label for="more"> More than one of the above</label>
+                        </div>
+                        <div>
+                            <input id="na" type="radio" name="race" value="na" formControlName="race" [(ngModel)]="value"> 
+                            <label for="na"> I choose not to identify</label>
+                        </div>
+                        <div>
+                            <input id="other" type="radio" name="race" value="other" formControlName="race" [(ngModel)]="value">
+                            <label for="other"> Other</label>
+                        </div>
+                        <div class="help-is-danger" *ngIf="race.invalid && !race.pristine">
+                            <p *ngIf="race.errors.required">Race is required.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="field">
@@ -183,6 +180,9 @@
                     <p>14. Have you found or seen instances of restorative justice in your own experience or in others' experiences with #MeToo? (<b>Restorative Justice</b>: finding rehabilitation for offenders through reconciliation with victims and the community at large)</p>
                     <textarea class="textarea" type="text" formControlName="question12"></textarea>
                 </div>
+
+                <!--Submit Button-->
+                <button type="submit" class="button is-danger is-outlined" [disabled]="!surveyForm.valid">Submit</button> 
             </form>
         </div>
     </div>
