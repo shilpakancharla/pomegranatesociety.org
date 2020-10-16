@@ -36,9 +36,9 @@
 				<div class="field">
 					<!--Checkbox for remaining anonymous-->
 					<label class="checkbox">
-            <input type="checkbox" formControlName="anonymous">
-            Remain anonymous
-          </label>
+						<input type="checkbox" formControlName="anonymous">
+						Remain anonymous
+					</label>
 				</div>
 
 				<div class="field" [hidden]="anonymous.value">
@@ -56,9 +56,9 @@
 				<div class="field">
 					<!--Checkbox for being contacted-->
 					<label class="checkbox">
-            <input type="checkbox" formControlName="contact">
-            Contact me
-          </label>
+						<input type="checkbox" formControlName="contact">
+						Contact me
+					</label>
 				</div>
 
 				<div class="field" [hidden]="!contact.value">
@@ -123,10 +123,9 @@
 
 				<!--Submit Button-->
 				<button type="submit"
-                class="button is-danger is-outlined"
-                [disabled]="!submissionForm.valid">
-          Submit
-        </button>
+						class="button is-danger is-outlined"
+						[disabled]="!submissionForm.valid">Submit
+				</button>
 			</form>
 		</div>
 	</div>
